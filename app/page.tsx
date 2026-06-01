@@ -97,6 +97,7 @@ import HeroTile from "@/components/HeroTile";
 import ActivityTile from "@/components/ActivityTile";
 import BentoGrid from "@/components/BentoGrid";
 import CourseCard from "@/components/CourseCard";
+import MobileNav from "@/components/MobileNav";
 
 export default async function Home() {
   // const { data: courses} = await supabase
@@ -115,7 +116,7 @@ console.log("ERROR:", error);
 </div>
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
+    <main className="min-h-screen bg-zinc-950 text-white ">
       <section className="flex">
         <Sidebar />
 
@@ -134,6 +135,7 @@ console.log("ERROR:", error);
           </BentoGrid>
         </section>
       </section>
+      <MobileNav />
     </main>
   );
 }
